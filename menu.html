@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Saffron &amp; Sage</title>
+  <meta name="description" content="Explore the Saffron & Sage menu with starters, tandoor mains, biryanis, desserts, drinks, and chef signature dishes.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="menu">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Saffron and Sage home">
+      <span class="brand-mark">S&amp;S</span>
+      <span class="brand-copy">
+        <strong>Saffron &amp; Sage</strong>
+        <small>Modern Indian Kitchen</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="service.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="header-cta" href="contact.html#reservation">Book Table</a>
+  </header>
+
+  <main>
+    <section class="sub-hero menu-hero">
+      <div>
+        <p class="eyebrow">Fresh, layered, and made for sharing</p>
+        <h1>Menu</h1>
+        <p>From bright small plates to tandoor mains, biryanis, desserts, and crafted drinks.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow dark">Chef curated</p>
+        <h2 id="signature">Signature plates</h2>
+      </div>
+      <div class="menu-feature">
+        <img src="assets/signature-platter.png" alt="Signature platter with Indian fusion dishes">
+        <div>
+          <h3>Saffron Tasting Platter</h3>
+          <p>Paneer tikka, butter chicken slider, saffron rice, seasonal chutneys, crisp papad, and herb salad. Built for two and finished with smoked ghee at the table.</p>
+          <strong>Rs. 1,250</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow dark">Choose your course</p>
+        <h2>All day menu</h2>
+      </div>
+      <div class="menu-filters" aria-label="Menu filters">
+        <button type="button" class="filter-button is-active" data-menu-filter="all">All</button>
+        <button type="button" class="filter-button" data-menu-filter="starters">Starters</button>
+        <button type="button" class="filter-button" data-menu-filter="mains">Mains</button>
+        <button type="button" class="filter-button" data-menu-filter="desserts">Desserts</button>
+        <button type="button" class="filter-button" data-menu-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-menu-category="starters">
+          <div>
+            <span>Starters</span>
+            <h3>Smoked Corn Chaat</h3>
+            <p>Charred corn, mint chutney, pomegranate, crisp sev, lime.</p>
+          </div>
+          <strong>Rs. 340</strong>
+        </article>
+        <article class="menu-card" data-menu-category="starters">
+          <div>
+            <span>Starters</span>
+            <h3>Tandoori Broccoli</h3>
+            <p>Hung curd marinade, sesame, garlic pickle, cashew cream.</p>
+          </div>
+          <strong>Rs. 430</strong>
+        </article>
+        <article class="menu-card" data-menu-category="starters">
+          <div>
+            <span>Starters</span>
+            <h3>Chicken Pepper Fry Bites</h3>
+            <p>Curry leaf dust, black pepper glaze, onion petals.</p>
+          </div>
+          <strong>Rs. 520</strong>
+        </article>
+        <article class="menu-card" data-menu-category="mains">
+          <div>
+            <span>Mains</span>
+            <h3>Old Delhi Butter Chicken</h3>
+            <p>Charred chicken, tomato makhani, fenugreek, smoked butter.</p>
+          </div>
+          <strong>Rs. 680</strong>
+        </article>
+        <article class="menu-card" data-menu-category="mains">
+          <div>
+            <span>Mains</span>
+            <h3>Paneer Lababdar Steak</h3>
+            <p>Grilled paneer, cashew masala, tomato relish, laccha onions.</p>
+          </div>
+          <strong>Rs. 620</strong>
+        </article>
+        <article class="menu-card" data-menu-category="mains">
+          <div>
+            <span>Mains</span>
+            <h3>Dum Vegetable Biryani</h3>
+            <p>Basmati rice, saffron, seasonal vegetables, burani raita.</p>
+          </div>
+          <strong>Rs. 590</strong>
+        </article>
+        <article class="menu-card" data-menu-category="desserts">
+          <div>
+            <span>Desserts</span>
+            <h3>Pistachio Kulfi Cloud</h3>
+            <p>Hand-churned kulfi, rose crumble, toasted pistachio.</p>
+          </div>
+          <strong>Rs. 360</strong>
+        </article>
+        <article class="menu-card" data-menu-category="desserts">
+          <div>
+            <span>Desserts</span>
+            <h3>Chocolate Cardamom Tart</h3>
+            <p>Dark chocolate ganache, cardamom cream, almond crunch.</p>
+          </div>
+          <strong>Rs. 390</strong>
+        </article>
+        <article class="menu-card" data-menu-category="drinks">
+          <div>
+            <span>Drinks</span>
+            <h3>Jamun Mule</h3>
+            <p>Jamun, ginger beer, lime, black salt, mint.</p>
+          </div>
+          <strong>Rs. 280</strong>
+        </article>
+        <article class="menu-card" data-menu-category="drinks">
+          <div>
+            <span>Drinks</span>
+            <h3>Saffron Iced Tea</h3>
+            <p>Cold brewed tea, saffron, orange peel, basil seed.</p>
+          </div>
+          <strong>Rs. 260</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Saffron &amp; Sage</strong>
+      <p>Modern Indian kitchen, private dining, catering, and crafted drinks.</p>
+    </div>
+    <div>
+      <span>18 Garden Avenue, City Center</span>
+      <span>+91 98765 43210</span>
+      <span>hello@saffronandsage.com</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
