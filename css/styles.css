@@ -753,30 +753,95 @@ textarea:focus {
 }
 
 .site-footer {
+  margin-top: 80px;
+  padding: 60px 8% 25px;
+  background: #fbf7ef;
+  border-top: 1px solid rgba(40, 35, 30, 0.08);
+  color: #111827;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 24px;
-  padding: 34px clamp(20px, 6vw, 84px);
-  color: rgba(255, 255, 255, 0.78);
-  background: var(--charcoal);
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 50px;
 }
 
-.site-footer strong {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--white);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+.footer-brand h3 {
+  margin: 0 0 8px;
+  color: #111827;
+  font-size: 24px;
 }
 
-.site-footer p {
-  margin: 0;
+.footer-brand p {
+  margin: 0 0 12px;
+  color: #d99a45;
 }
 
-.site-footer div:last-child {
-  display: grid;
-  gap: 4px;
-  text-align: right;
+.footer-brand span {
+  color: #3e4653;
+  font-size: 14px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: 16px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: #3e4653;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #d99a45;
+}
+
+.footer-contact {
+  color: #3e4653;
+}
+
+.footer-contact p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 55px auto 0;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(40, 35, 30, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  color: #3e4653;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 @media (max-width: 980px) {
@@ -900,13 +965,5 @@ textarea:focus {
   .menu-card {
     flex-direction: column;
     min-height: 0;
-  }
-
-  .site-footer {
-    grid-template-columns: 1fr;
-  }
-
-  .site-footer div:last-child {
-    text-align: left;
   }
 }

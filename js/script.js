@@ -84,7 +84,7 @@
 
       form.reset();
       if (message) {
-        message.textContent = "Thank you. Your request has been noted and our team will contact you soon.";
+        message.textContent = "Demo booking submitted successfully";
         message.className = "form-message is-success";
       }
     });
